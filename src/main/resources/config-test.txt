@@ -1,0 +1,6 @@
+
+db.url  = jdbc:mysql://xx:3306/android_service?useUnicode=true&amp;zeroDateTimeBehavior=convertToNull
+db.user =  
+db.pwd =  
+db.type   = mysql
+
