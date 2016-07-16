@@ -44,18 +44,5 @@ public class Solution67 {
 
 
 
-    /**
-     * 调用一下类库 不过太长的就不好使了
-     *
-     * @param a
-     * @param b
-     * @return
-     */
-    public String addBinary2(String a, String b) {
-
-        Long rst = Long.parseLong(a, 2) + Long.parseLong(b, 2);
-        return Long.toBinaryString(rst).toString();
-    }
-
 
 }

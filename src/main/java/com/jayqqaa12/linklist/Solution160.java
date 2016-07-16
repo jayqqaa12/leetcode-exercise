@@ -11,14 +11,7 @@ import com.jayqqaa12.ListNode;
 public class Solution160 {
 
 
-    /**
-     * 思路1 计算2个链表长度  然后调整到相同的位置 找到共同点
-     *
-     *
-     * @param headA
-     * @param headB
-     * @return
-     */
+
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
         if(headA==null||headB==null)return null;

@@ -16,6 +16,7 @@ public class Solution5 {
         if (len < 2)
             return s;
 
+
         for (int i = 0; i < len-1; i++) {
             extendPalindrome(s, i, i);  //assume odd length, try to extend Palindrome as possible
             extendPalindrome(s, i, i+1); //assume even length.

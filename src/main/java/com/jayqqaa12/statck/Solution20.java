@@ -1,4 +1,4 @@
-package com.jayqqaa12.string;
+package com.jayqqaa12.statck;
 
 
 import java.util.Stack;

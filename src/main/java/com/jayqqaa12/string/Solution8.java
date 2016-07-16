@@ -8,7 +8,7 @@ package com.jayqqaa12.string;
  *
  * 超过最大值 返回最大值
  *
- * 难度 1.5星
+ * 难度 2星
  *
  */
 public class Solution8 {

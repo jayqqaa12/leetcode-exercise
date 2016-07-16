@@ -16,7 +16,6 @@ public class Solution1 {
         Map<Integer, Integer> map = new HashMap<>();
         int[] rst = new int[2];
 
-
         for (int i = 0; i < nums.length; i++) {
 
             if (map.containsKey(target - nums[i])) {

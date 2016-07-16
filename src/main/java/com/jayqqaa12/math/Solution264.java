@@ -1,4 +1,4 @@
-package com.jayqqaa12.bit;
+package com.jayqqaa12.math;
 
 
 /**
