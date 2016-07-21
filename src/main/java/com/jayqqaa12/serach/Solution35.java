@@ -1,4 +1,4 @@
-package com.jayqqaa12.array;
+package com.jayqqaa12.serach;
 
 
 /**
@@ -13,6 +13,7 @@ package com.jayqqaa12.array;
  * 难度1星
  */
 public class Solution35 {
+
     public int searchInsert(int[] nums, int target) {
 
         for (int i = 0; i < nums.length; i++) {

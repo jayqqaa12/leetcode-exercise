@@ -3,6 +3,13 @@ package com.jayqqaa12.array;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * 简化数组
+ *
+ * 难度2星
+ *
+ */
 public class Solution228 {
     public List<String> summaryRanges(int[] nums) {
 

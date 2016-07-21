@@ -5,6 +5,10 @@ package com.jayqqaa12.array;
  *
  * 删除重复字符串 （数组已排序）
  *
+ * 难度2星
+ *
+ * FIXME
+ *
  */
 public class Solution26 {
 
@@ -19,4 +23,8 @@ public class Solution26 {
 
         return  c;
     }
+
+
+
+
 }

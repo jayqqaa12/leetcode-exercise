@@ -11,7 +11,8 @@ public class Solution69 {
 
     /**
      * 二分法
-     *解在 [1, x/2]
+     * 平方根的 解在 [1, x/2]
+     *
      * @param x
      * @return
      */

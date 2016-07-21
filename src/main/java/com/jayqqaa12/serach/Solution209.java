@@ -1,4 +1,4 @@
-package com.jayqqaa12.array;
+package com.jayqqaa12.serach;
 
 
 /**
@@ -19,7 +19,6 @@ public class Solution209 {
      * @return
      */
     public int minSubArrayLen(int target, int[] nums) {
-
 
         int min = Integer.MAX_VALUE;
         int sum = 0;
