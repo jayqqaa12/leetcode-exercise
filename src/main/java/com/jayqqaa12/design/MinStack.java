@@ -1,4 +1,4 @@
-package com.jayqqaa12.statck;
+package com.jayqqaa12.design;
 
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.List;
  * 难度1星
  *
  */
-public class Solution155 {
+public class MinStack {
 
     List<Integer> list = new ArrayList<>();
     private int min=Integer.MAX_VALUE;

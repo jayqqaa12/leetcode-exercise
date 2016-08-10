@@ -1,4 +1,4 @@
-package com.jayqqaa12.statck;
+package com.jayqqaa12.design;
 
 import com.jayqqaa12.TreeNode;
 

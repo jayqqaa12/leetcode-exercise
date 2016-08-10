@@ -1,16 +1,16 @@
-package com.jayqqaa12.statck;
+package com.jayqqaa12.design;
 
 
 import java.util.Stack;
 
 /**
- *实现Queue 使用stack
- *
+ * 实现Queue 使用stack
+ * <p>
  * 难度1星
  */
 class Solution232 {
 
-    Stack<Integer> input     =new Stack();
+    Stack<Integer> input = new Stack();
     Stack<Integer> output = new Stack();
 
 
@@ -27,16 +27,17 @@ class Solution232 {
     // Get the front element.
     public int peek() {
 
-        if(output.isEmpty())
-        while (!input.isEmpty())
-            output.push(input.pop());
-        return  output.peek();
+        if (output.isEmpty())
+            while (!input.isEmpty())
+                output.push(input.pop());
+        return output.peek();
     }
 
     public int top() {
-        return  output.peek();
+        return output.peek();
     }
+
     public boolean empty() {
-        return input.isEmpty()&&output.isEmpty();
+        return input.isEmpty() && output.isEmpty();
     }
 }

@@ -1,5 +1,4 @@
-package com.jayqqaa12.math;
-
+package com.jayqqaa12.dp;
 
 /**
  * 给定 n  计算  0<= x < 10n次方 数字不重复的个数

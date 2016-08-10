@@ -1,4 +1,4 @@
-package com.jayqqaa12.array;
+package com.jayqqaa12.dp;
 
 import java.util.List;
 
@@ -38,4 +38,6 @@ public class Solution120 {
                         + Math.min(triangle.get(i + 1).get(j), triangle.get(i + 1).get(j + 1)));
         return triangle.get(0).get(0);
     }
+
+
 }

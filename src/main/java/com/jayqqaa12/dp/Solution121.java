@@ -1,10 +1,12 @@
-package com.jayqqaa12.array;
+package com.jayqqaa12.dp;
 
 
 /**
  * 数组为  价格变化
  *
  * 求在何时买入 卖出时 收益最大
+ *
+ * 难度2星
  *
  */
 public class Solution121 {
