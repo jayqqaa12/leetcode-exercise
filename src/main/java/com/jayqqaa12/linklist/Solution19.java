@@ -21,9 +21,9 @@ public class Solution19 {
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
 
-        ListNode start = new ListNode(0);
-        ListNode slow = start, fast = start;
-        start.next = head;
+        ListNode dummy = new ListNode(0);
+        ListNode slow = dummy, fast = dummy;
+        dummy.next = head;
 
         //先移动 fast到 length- n的位置
         for (int i = 0; i <= n; i++) {

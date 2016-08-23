@@ -1,9 +1,9 @@
 package com.jayqqaa12.base;
 
 /**
- * Created by 12 on 2016/7/15.
+ *
  */
-public class Test {
+public class QuickSort {
 
    public static void quicksort(int n[], int left, int right) {
         int dp;

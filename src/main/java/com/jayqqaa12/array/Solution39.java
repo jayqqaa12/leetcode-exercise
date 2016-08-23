@@ -30,7 +30,7 @@ public class Solution39 {
 
 
         if(target>0){
-            for (int i = start; i < candidates.length; i++) {
+            for (int i = 0; i < candidates.length; i++) {
 
                 subList.add(candidates[i]);
                 dfs(list,subList,target-candidates[i],candidates,i); //因为可以用多次 i 不增加

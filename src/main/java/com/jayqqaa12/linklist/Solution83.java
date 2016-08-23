@@ -2,7 +2,7 @@ package com.jayqqaa12.linklist;
 
 import com.jayqqaa12.ListNode;
 
-import java.util.List;
+import java.util.Stack;
 
 /**
  * 给定一个排序的 链表
@@ -23,6 +23,7 @@ public class Solution83 {
             else curr = curr.next;
         }
 
+         Stack stat =new Stack();
         return head;
     }
 

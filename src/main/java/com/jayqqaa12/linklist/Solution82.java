@@ -4,7 +4,8 @@ import com.jayqqaa12.ListNode;
 
 
 /**
- * 去掉重复的节点
+ * 去掉所有重复的节点
+ *
  * <p>
  * For example,
  * Given 1->2->3->3->4->4->5, return 1->2->5.

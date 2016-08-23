@@ -12,27 +12,6 @@ import java.util.*;
 public class Solution3 {
 
 
-    public int removeElement(int[] A, int elem) {
-
-
-        if(A==null||A.length==0)return 0;
-
-        List<Integer> list =new ArrayList<>();
-
-
-
-        for(int n:list){
-
-            if(n==elem)list.remove(n);
-
-        }
-
-
-        return list.size();
-
-    }
-
-
     public int lengthOfLongestSubstring(String s) {
         int i = 0,j=0,max =0;
         Set set= new HashSet<>();

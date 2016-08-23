@@ -25,7 +25,6 @@ public class Solution143 {
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) return;
 
-
         ListNode p1 =head;
         ListNode p2=head;
 

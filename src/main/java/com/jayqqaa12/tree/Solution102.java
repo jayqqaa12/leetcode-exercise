@@ -3,7 +3,6 @@ package com.jayqqaa12.tree;
 import com.jayqqaa12.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 

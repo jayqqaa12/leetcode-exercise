@@ -60,66 +60,6 @@ public class Solution229 {
         return list;
     }
 
-    /**
-     *
-     * 求 gray code
-     *
-     * 难度 2星
-     *
-     * @REVIEW
-     *
-     */
-    public static class Solution89 {
-
-        /**
-         *
-         * 根据公式来
-         *
-         *  G(i) = i^ (i/2).
-         * @param n
-         * @return
-         */
-        public List<Integer> grayCode(int n) {
-
-            List<Integer> list = new ArrayList<>();
-
-            for (int i = 0; i < 1 <<n; i++) {
-                list.add(i^i /2);
-            }
 
 
-
-            return list;
-        }
-    }
-
-    /**
-     *
-     * 需要n步 到山顶 每次 可以走 1or2步
-     * 有多少种不同的方法
-     *
-     *  fibonacci sequence
-     *
-     *  难度 1.5星
-     */
-    public static class Solution70 {
-        public int climbStairs(int n) {
-
-            if(n<=0)return  0;
-            if(n==1)return 1;
-
-            int[] store = new int[n];
-
-            store[0]=1;
-            store[1]=2;
-
-            for(int i=2;i<n;i++)
-                store[i]=store[i-1]+store[i-2];
-
-
-            return store[n-1];
-
-        }
-
-    }
 }

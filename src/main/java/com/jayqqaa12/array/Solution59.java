@@ -12,7 +12,7 @@ package com.jayqqaa12.array;
  * [ 8, 9, 4 ],
  * [ 7, 6, 5 ]
  * ]
- * 难度3星
+ * 难度2星
  */
 public class Solution59 {
     public int[][] generateMatrix(int n) {

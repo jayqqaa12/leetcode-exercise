@@ -1,4 +1,4 @@
-package com.jayqqaa12.base;
+package com.jayqqaa12;
 
 public class LongestCommonSubstring {
 

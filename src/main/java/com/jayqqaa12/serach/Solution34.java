@@ -13,6 +13,7 @@ package com.jayqqaa12.serach;
 public class Solution34 {
     public int[] searchRange(int[] nums, int target) {
 
+
         int start =-1;
         int end =-1;
 

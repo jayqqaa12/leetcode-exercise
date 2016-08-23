@@ -3,7 +3,7 @@ package com.jayqqaa12.base;
 /**
  * Created by 12 on 2016/7/4.
  *
- *
+ *二分搜索
  *
  */
 public class BinarySerach {
@@ -16,7 +16,7 @@ public class BinarySerach {
         //当low"指针"和high不重复的时候.
         while(low<=high){
 
-            int middle=low+((high-low)/2);
+            int middle=low+(high-low)/2;
             //与最中间的数字进行判断,是否相等,相等的话就返回对应的数组下标.
             if(des==srcArray[middle]){
                 return middle;

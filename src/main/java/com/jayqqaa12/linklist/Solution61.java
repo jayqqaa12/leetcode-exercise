@@ -22,7 +22,7 @@ public class Solution61 {
         for (i=0;fast.next!=null;i++)//Get the total length
             fast=fast.next;
 
-        for (int j=i-k%i;j>0;j--) //Get the i-n%i th node
+        for (int j=i-k%i;j>0;j--) //Get the i-k%i th node
             slow=slow.next;
 
         fast.next=dummy.next; //Do the rotation

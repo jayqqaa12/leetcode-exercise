@@ -2,8 +2,6 @@ package com.jayqqaa12.tree;
 
 import com.jayqqaa12.TreeNode;
 
-import javax.swing.*;
-
 
 /**
  * 给定 先序 遍历 和中序遍历 (不存在相同的值的情况)
@@ -15,8 +13,8 @@ public class Solution105 {
 
 
     /**
-     * 1.确定root
-     * 2.通过root 确定 左右子树
+     * 1.确定root  （中序遍历）
+     * 2.通过root 确定 左右子树 （先序遍历 的左右子树 ）
      * 3.重复上面步骤
      *
      * @param preorder

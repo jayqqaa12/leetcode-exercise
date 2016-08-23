@@ -40,7 +40,7 @@ public class Solution78 {
         for (int i = start; i < nums.length; i++) {
 
             subList.add(nums[i]);
-            dfs(list, subList, nums, start + 1);
+            dfs(list, subList, nums, i + 1);
             subList.remove(subList.size() - 1);
         }
 
