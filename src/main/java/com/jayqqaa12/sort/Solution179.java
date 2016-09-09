@@ -6,7 +6,6 @@ import java.util.Arrays;
 /**
  * 使用数组 组成一个最大数
  * <p>
- * <p>
  * 难度2星
  */
 public class Solution179 {

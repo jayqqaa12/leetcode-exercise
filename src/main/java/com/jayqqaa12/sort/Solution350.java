@@ -7,7 +7,6 @@ import java.util.*;
  * <p>
  * Example:
  * Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
- * <p>
  * 数字可重复
  * <p>
  * 难度2星

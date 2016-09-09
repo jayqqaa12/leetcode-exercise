@@ -1,12 +1,17 @@
 package com.jayqqaa12.base;
 
 /**
- * 插入排序
+ * 直接插入排序
  *
  * 思路 默认第一个有序
  * 每次插入一个数 调整位置
  *
- * O(n2)
+ * 时间 O(n2)
+ * 空间 O(1)
+ *
+ * 稳定
+ *
+ *
  */
 public class InsertSort {
 

@@ -9,8 +9,8 @@ import java.util.List;
  * 计算根节点到所有子节点的和
  * <p>
  * For example,
- * 1
- * / \
+ *   1
+ *  / \
  * 2   3
  * The root-to-leaf path 1->2 represents the number 12.
  * The root-to-leaf path 1->3 represents the number 13.

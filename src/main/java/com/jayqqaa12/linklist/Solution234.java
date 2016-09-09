@@ -2,6 +2,8 @@ package com.jayqqaa12.linklist;
 
 import com.jayqqaa12.ListNode;
 
+import java.util.Stack;
+
 
 /**
  * 判断是否为 回文链表
@@ -16,40 +18,25 @@ public class Solution234 {
 
 
     public boolean isPalindrome(ListNode head) {
-
+        Stack<Integer> stack=new Stack<>();
         ListNode fast = head;
         ListNode slow = head;
 
         while (fast != null && fast.next != null) {
+            stack.push(slow.val);
             fast = fast.next.next;
             slow = slow.next;
         }
 
         if (fast != null) slow = slow.next;
 
-        slow = reverse(slow);
-
-        while (slow != null && head.val == slow.val) {
-
-            head = head.next;
-            slow = slow.next;
-
+        while(slow!=null){
+            if(slow.val!=stack.pop())return false;
+            slow=slow.next;
         }
 
-        return slow == null;
+        return true;
     }
 
-    private ListNode reverse(ListNode head) {
-        ListNode newNode = null;
 
-        while (head != null) {
-            ListNode next = head.next;
-            head.next = newNode;
-
-            newNode = head;
-            head = next;
-        }
-
-        return newNode;
-    }
 }

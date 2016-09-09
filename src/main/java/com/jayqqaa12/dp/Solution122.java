@@ -17,8 +17,7 @@ public class Solution122 {
         int max =0;
         if(prices==null||prices.length==0)return  max;
 
-
-        for (int i = 0; i < prices.length; i++) {
+        for (int i = 0; i < prices.length-1; i++) {
             if(prices[i+1]>prices[i]) max+= prices[i+1]-prices[i];
         }
 

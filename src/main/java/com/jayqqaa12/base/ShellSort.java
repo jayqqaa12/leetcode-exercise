@@ -1,38 +1,52 @@
 package com.jayqqaa12.base;
 
 /**
- * 希尔排序（插入排序类）
+ * 希尔排序（分组的插入排序 ）
+ * 先将整个待排元素序列分割成若干个子序列（由相隔某个“增量”的元素组成的）
+ * 分别进行直接插入排序，然后依次缩减增量再进行排序，
+ * 待整个序列中的元素基本有序（增量足够小）时，再对全体元素进行一次直接插入排序。
+ * 因为直接插入排序在元素基本有序的情况下（接近最好情况）
+ * ，效率是很高的，因此希尔排序在时间效率上比前两种方法有较大提高。
  *
+ * 时间 O(N(logN)^2)
+ * 空间 O(1)
  *
+ * 不稳定
  *
  */
 public class ShellSort {
 
-    public void shellSort() {
-        int a[] = {1, 54, 6, 3, 78, 34, 12, 45, 56, 100};
-
-        double d1 = a.length;
-
-        while (true) {
-            d1 = Math.ceil(d1 / 2);
-            int d = (int) d1;
-
-            for (int x = 0; x < d; x++) {
-                for (int i = x + d; i < a.length; i += d) {
-                    int j = i - d;
-                    int temp = a[i];
-                    for (; j >= 0 && temp < a[j]; j -= d) {
-                        a[j + d] = a[j];
+    public static void shellSort(int[] data) {
+        int j = 0;
+        int temp = 0;
+        for (int increment = data.length / 2; increment > 0; increment /= 2) {
+            for (int i = increment; i < data.length; i++) {
+                temp = data[i];
+                for (j = i; j >= increment; j -= increment) {
+                    if(temp > data[j - increment]){
+                        data[j] = data[j - increment];
+                    }else{
+                        break;
                     }
-                    a[j + d] = temp;
                 }
+                data[j] = temp;
             }
-            if (d == 1) break;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] data = new int[] { 5, 2, 8, 9, 1, 3 ,4};
+
+        System.out.println("未排序前");
+        for (int i = 0; i < data.length; i++){
+            System.out.print(data[i] + " ");
         }
 
-        for (int i = 0; i < a.length; i++)
-            System.out.println(a[i]);
+        shellSort(data);
 
+        System.out.println("\n排序后");
+        for (int i = 0; i < data.length; i++)
+            System.out.print(data[i] + " ");
     }
 
 }

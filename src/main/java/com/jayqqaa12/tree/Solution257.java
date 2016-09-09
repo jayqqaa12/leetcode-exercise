@@ -11,11 +11,11 @@ import java.util.List;
  * 输出所有根到子节点的路径
  *
  * For example, given the following binary tree:
- *    1
- *  /   \
- * 2     3
- * \
- * 5
+ *     1
+ *   /   \
+ *  2     3
+ *  \
+ *  5
  * ["1->2->5", "1->3"]
  */
 public class Solution257 {
